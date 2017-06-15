@@ -1,0 +1,65 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  color: #303841;
+  font-family: 'Roboto', '黑體-繁', '微軟正黑體', sans-serif;
+
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+  background-blend-mode: multiply,multiply;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.board {
+  width: 450px;
+  background-color: rgba(255, 255, 255, .2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+}
+.title {
+  text-align: center;
+}
+.time {
+  text-align: center;
+}
+.time span {
+  padding: 0px 5px;
+}
+.list {
+  height: 510px;
+  padding: 20px;
+}
+.list ul {
+  height: 450px;
+  overflow-y: auto;
+  padding: 0px;
+  list-style-type: none;
+}
+.list li {
+  display: flex;
+  font-size: 1.5em;
+  border-top: 1px dashed #fff;
+}
+.nickname, .ctrl {
+  width: 50%;
+}
+.ctrl {
+  text-align: right;
+  padding-right: 10px;
+}
+
+/*scrollbar css*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.5);
+}

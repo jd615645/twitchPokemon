@@ -1,0 +1,22 @@
+extends layout
+block css
+  link(rel='stylesheet', href='/styles/css/main.css')
+block content
+  .board
+    h1.title Twitch Plays Pokemon
+    h2.time
+      span.hr 0
+      | h
+      span.min 0
+      | m
+      span.sec 0
+      | s
+    .list
+      ul
+        //- li
+        //-   .nickname Sakamoto
+        //-   .ctrl Up
+
+block append js
+  script(src='./socket.io/socket.io.js')
+  script(src='./js/main.js')
